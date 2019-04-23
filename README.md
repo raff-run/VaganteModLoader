@@ -12,6 +12,8 @@ Loads mods for Vagante.
 
 # How to use (for players)
 
+1. Make sure you're not using old data.vra mods by checking the integrity of game files on Steam
+1. Once your data.vra is the original, unmodded one, proceed with the other steps.
 1. Download the latest version of vagante-extract from https://github.com/mtolly/vagante-extract/releases/latest
 1. Download this modloader (from the Releases Page)
 1. Extract the VaganteModLoader.zip inside the Vagante folder (where vagante.exe is)
@@ -50,6 +52,8 @@ Now get whatever files you need from the folder "data"(or "dataBackup"), change 
 
 For example, this creates a mod that changes the shop song:
 
+1. Make sure you're not using old data.vra mods by checking the integrity of game files on Steam.
+1. Once your data.vra is the original, unmodded one, proceed with the other steps.
 1. Extract data.vra using vagante-extract
 2. Enter data\sfx
 3. Copy shop_theme.ogg
@@ -64,6 +68,7 @@ For example, this creates a mod that changes the shop song:
 
 If your mod is a data.vra repack, follow these steps to convert them into the ModLoader format:
 
+1. If your mod is currently installed, rename your modded data.vra to something else and restore the original data.vra
 1. Extract your modified data.vra using vagante-extract
 2. Find the files you changed, and copy them into Mods/\<YourMod><br>
 For example, your mod changed the cursor sprites. The changed file would then be inside \<Extracted data.vra folder>\gfx\generic_select.png<br>
