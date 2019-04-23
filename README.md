@@ -17,8 +17,9 @@ Loads mods for Vagante.
 1. Extract the VaganteModLoader.zip inside the Vagante folder (where vagante.exe is)
 1. Unzip the vagante-extract you downloaded
 1. Get the vagante-extract.exe inside it and place it inside the Vagante folder as well
+<br>That is in \<Your steam library>\steamapps\common\vagante
+1. Place the mod folder inside the Mods folder in the Vagante folder<br>
 <br>That usually is in \<Your steam library>\steamapps\common\vagante\Mods
-1. Place the mod folder inside the Mods folder in the Vagante folder
 1. If the Mods folder doesn't exist, create it or run the modLoader once (By right-clicking VaganteModLoader.ps1 and selecting Run with Powershell)
 1. You're done!
 
