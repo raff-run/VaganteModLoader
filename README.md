@@ -98,6 +98,15 @@ If you want to update the ModLoader, create an issue describing what the problem
 
 If you don't know how programming but still want to help, just create an issue and I'll try to look into it when I have free time.
 
+By the way, I don't have an mac, so I have no idea how to make a version of this for macs, so if you want to make a version of this ModLoader for Mac, go for it! I'll happily explain what everything that the PowerShell script does.
+Alternatively if someone can provide me with this info, I may be able to make a Mac version myself (I will need help testing though)
+Here's the info I'd need:
+1. Does it accept the same parameters as the .exe version?<br>
+It accepts these parameters on Windows:<br>
+extract data.vraPath ExtractedContentFolderPath <br>
+and archive ExtractedContentFolderPath data.vraPath
+1. Does mac support Bash? Is it easy to install?
+
 # Credits
 I use and bundle Anybox with this ModLoader. Anybox is a Powershell Module developed by @dm3ll3n (https://github.com/dm3ll3n/AnyBox) that I use to make these popups with custom buttons.
 
