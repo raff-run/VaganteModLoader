@@ -15,7 +15,7 @@ Loads mods for Vagante.
 1. Make sure you're not using old data.vra mods by checking the integrity of game files on Steam
 1. Once your data.vra is the original, unmodded one, proceed with the other steps.
 1. Download the latest version of vagante-extract from https://github.com/mtolly/vagante-extract/releases/latest
-1. Download this modloader (from the Releases Page)
+1. Download the VaganteModLoader.zip (from the Releases Page)
 1. Extract the VaganteModLoader.zip inside the Vagante folder (where vagante.exe is)
 1. Unzip the vagante-extract you downloaded
 1. Get the vagante-extract.exe inside it and place it inside the Vagante folder as well
@@ -50,6 +50,8 @@ To remove mods, just delete the mod folder and run the ModLoader again.
 To create a mod, just drag the original data.vra - That is: data.vra itself if you have no mods or dataBackup.vra if you do, into vagante-extract.
 
 Now get whatever files you need from the folder "data"(or "dataBackup"), change them, then create a folder with your mod's name inside Mods. Now, mimic the folder structure the file you changed was in the extracted data.vra.
+
+You can also use Mods\Examplemod to get a template for your mod with folder structure already there. Don't worry, ignoreme.ignore files will be ignored when loading mods.
 
 For example, this creates a mod that changes the shop song:
 
