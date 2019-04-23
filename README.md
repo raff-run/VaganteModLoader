@@ -33,6 +33,7 @@ Loads mods for Vagante.
 ---------VaganteModLoader.ps1<br>
 ---------vagante-extract.exe<br>
 ---------(everything else)<br>
+1. Right click on VaganteModLoader.ps1 and select "Run with Powershell"
 1. You're done!
 
 For reference, the Mods folder should look like this if you install a mod that changes the bonfire graphics:
