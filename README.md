@@ -19,7 +19,7 @@ Loads mods for Vagante.
 1. Get the vagante-extract.exe inside it and place it inside the Vagante folder as well
 <br>That usually is in \<Your steam library>\steamapps\common\vagante\Mods
 1. Place the mod folder inside the Mods folder in the Vagante folder
-1. If the Mods folder doesn't exist, create it or run the modLoader once
+1. If the Mods folder doesn't exist, create it or run the modLoader once (By right-clicking VaganteModLoader.ps1 and selecting Run with Powershell)
 1. You're done!
 
 For reference, the Mods folder should look like this if you install a mod that changes the bonfire graphics:
@@ -46,7 +46,7 @@ For example, this creates a mod that changes the shop song:
 5. Create a "MyNewShopSongMod" folder inside Mods\\
 6. Create a "sfx" folder inside Mods\\MyNewShopSongMod
 7. Place your modified shop_theme.ogg inside it
-8. Done! Now just run the modloader and test your mod
+8. Done! Now just run the modloader and test your mod (By right-clicking VaganteModLoader.ps1 and selecting Run with Powershell)
 9. Distribute your mod by uploading MyNewShopSongMod. An easy way to do so is to create a .zip of it and use any host to upload.
 
 # Notes
