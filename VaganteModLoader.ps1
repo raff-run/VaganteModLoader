@@ -87,22 +87,24 @@ function LoadMods {
         $ModdedFiles = Get-ChildItem -File -Recurse $RootFolder.FullName;   
         foreach($File in $ModdedFiles){
                 "Found modded file in " + $ModdedFolder.Name + ": " + $File.Name
-                #This was the only way I found to get a relative path from a path that is not the current path
-                $FileRelativePath = $File.FullName.Replace($RootFolder.FullName + "\", "")
-                $conflictResolution = ""
-                
-                #If the file is already in the list of modded files, resolve the conflict
-                if($FilesMarkedForModding.ContainsKey($FileRelativePath)){
-                    "Two mods are trying to change the same file: " + $FileRelativePath
-                    $conflictResolution = Resolve-ModConflict -DuplicateFile $FileRelativePath -FirstMod $FilesMarkedForModding.Item($FileRelativePath) -SecondMod $RootFolder.Name
-                    if($conflictResolution -eq "Cancel"){
-                        exit
-                    } else {
-                        $FilesMarkedForModding.Item($FileRelativePath) = $conflictResolution
+                if($File.Name -ne "ignoreme.ignore" -and $File.Name -ne "readme.txt"){
+                    #This was the only way I found to get a relative path from a path that is not the current path
+                    $FileRelativePath = $File.FullName.Replace($RootFolder.FullName + "\", "")
+                    $conflictResolution = ""
+                    
+                    #If the file is already in the list of modded files, resolve the conflict
+                    if($FilesMarkedForModding.ContainsKey($FileRelativePath)){
+                        "Two mods are trying to change the same file: " + $FileRelativePath
+                        $conflictResolution = Resolve-ModConflict -DuplicateFile $FileRelativePath -FirstMod $FilesMarkedForModding.Item($FileRelativePath) -SecondMod $RootFolder.Name
+                        if($conflictResolution -eq "Cancel"){
+                            exit
+                        } else {
+                            $FilesMarkedForModding.Item($FileRelativePath) = $conflictResolution
+                        }
                     }
-                }
-                else { #Else, add the file to the list, along with the name of the mod that will change it
-                    $FilesMarkedForModding.Add($FileRelativePath, $RootFolder.Name)
+                    else { #Else, add the file to the list, along with the name of the mod that will change it
+                        $FilesMarkedForModding.Add($FileRelativePath, $RootFolder.Name)
+                    }
                 }
             }
     }
