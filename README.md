@@ -21,6 +21,16 @@ Loads mods for Vagante.
 1. Place the mod folder inside the Mods folder in the Vagante folder<br>
 <br>That usually is in \<Your steam library>\steamapps\common\vagante\Mods
 1. If the Mods folder doesn't exist, create it or run the modLoader once (By right-clicking VaganteModLoader.ps1 and selecting Run with Powershell)
+1. Your folder structure should look like this:<br>
+-----\<Your steam library>\steamapps\common\vagante<br>
+---------Mods\ <br>
+-------------CoolMod\ <br>
+------------------(mod files) <br>
+---------data.vra<br>
+---------vagante.exe<br>
+---------VaganteModLoader.ps1<br>
+---------vagante-extract.exe<br>
+---------(everything else)<br>
 1. You're done!
 
 For reference, the Mods folder should look like this if you install a mod that changes the bonfire graphics:
