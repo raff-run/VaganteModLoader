@@ -12,8 +12,11 @@ Loads mods for Vagante.
 
 # How to use (for players)
 
+1. Download the latest version of vagante-extract from https://github.com/mtolly/vagante-extract/releases/latest
 1. Download this modloader (from the Releases Page)
 1. Extract the VaganteModLoader.zip inside the Vagante folder (where vagante.exe is)
+1. Unzip the vagante-extract you downloaded
+1. Get the vagante-extract.exe inside it and place it inside the Vagante folder as well
 <br>That usually is in \<Your steam library>\steamapps\common\vagante\Mods
 1. Place the mod folder inside the Mods folder in the Vagante folder
 1. If the Mods folder doesn't exist, create it or run the modLoader once
@@ -59,3 +62,5 @@ If you don't know how programming but still want to help, just create an issue a
 
 # Credits
 I use and bundle Anybox with this ModLoader. Anybox is a Powershell Module developed by @dm3ll3n (https://github.com/dm3ll3n/AnyBox) that I use to make these popups with custom buttons.
+
+Credits to @mtolly too for the vagante-extract tool (https://github.com/mtolly/vagante-extract), which enables this whole thing
