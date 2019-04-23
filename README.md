@@ -51,5 +51,11 @@ Here are some things that may explain why your mod looks/sounds weird. These are
 * I'm pretty sure that the game doesn't react well to having any images redimensioned (not sprites, the .png that contains them).
 * Modded sounds probably have to have the same length than the original sound, too, but I never tested that. Sounds that are bigger than usual maybe won't be fully played.
 
+# Contributing
+
+If you want to update the ModLoader, create an issue describing what the problem is, fork the repository, then create a pull request after you're done.
+
+If you don't know how programming but still want to help, just create an issue and I'll try to look into it when I have free time.
+
 # Credits
 I use and bundle Anybox with this ModLoader. Anybox is a Powershell Module developed by @dm3ll3n (https://github.com/dm3ll3n/AnyBox) that I use to make these popups with custom buttons.
