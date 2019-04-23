@@ -49,6 +49,27 @@ For example, this creates a mod that changes the shop song:
 8. Done! Now just run the modloader and test your mod (By right-clicking VaganteModLoader.ps1 and selecting Run with Powershell)
 9. Distribute your mod by uploading MyNewShopSongMod. An easy way to do so is to create a .zip of it and use any host to upload.
 
+# Converting old mods to the new mod format
+
+If your mod is a data.vra repack, follow these steps to convert them into the ModLoader format:
+
+1. Extract your modified data.vra using vagante-extract
+2. Find the files you changed, and copy them into Mods/\<YourMod><br>
+For example, your mod changed the cursor sprites. The changed file would then be inside \<Extracted data.vra folder>\gfx\generic_select.png<br>
+Now copy this file into Mods\YourMod\gfx<br>
+The end result would be:<br>
+data(extracted data.vra)\\\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gfx\\\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generic_select.png<br>
+Mods\\\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PrettyCoolBonfireMod\\\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gfx\\\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generic_select.png
+3. Do this for all changed files, remembering to mimic the folder structure
+4. Now run the ModLoader -- it will warn you if any files were placed in the wrong place inside your mod folder.
+5. If no warnings appear, congrats! Your mod is converted!
+
+
 # Notes
 Here are some things that may explain why your mod looks/sounds weird. These are not problems with the modloader, but with the game itself.
 * I'm pretty sure that the game doesn't react well to having any images redimensioned (not sprites, the .png that contains them).
