@@ -86,8 +86,8 @@ function LoadMods {
         "Mod found: " + $RootFolder.Name
         $ModdedFiles = Get-ChildItem -File -Recurse $RootFolder.FullName;   
         foreach($File in $ModdedFiles){
-                "Found modded file in " + $ModdedFolder.Name + ": " + $File.Name
                 if($File.Name -ne "ignoreme.ignore" -and $File.Name -ne "readme.txt"){
+                    "Found modded file in " + $ModdedFolder.Name + ": " + $File.Name
                     #This was the only way I found to get a relative path from a path that is not the current path
                     $FileRelativePath = $File.FullName.Replace($RootFolder.FullName + "\", "")
                     $conflictResolution = ""
